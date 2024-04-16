@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manat Döviz Çevirici</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Manat-USD,EUR,RUB</h2>
+    <div class="input-container">
+        <label for="manatAmount">Miqdar (AZN):</label>
+        <input type="number" id="manatAmount" placeholder="Miqdar Daxil Edin..." oninput="convert()">
+    </div>
+    <div class="select-container">
+        <label for="currency">Dövriyyə:</label>
+        <select id="currency" onchange="convert()">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+        </select>
+    </div>
+    <div id="result"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
